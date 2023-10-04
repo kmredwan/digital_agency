@@ -1,6 +1,8 @@
-
-import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/Ai';
-import { BiLogoFacebook } from 'react-icons/Bi';
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import {
+    faFacebook, faInstagram, faTwitter
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 async function getData(){
     let res =  await fetch("https://agency.teamrabbil.com/api/TeamList")
     if(!res.ok){
@@ -34,9 +36,9 @@ const Team = async () => {
                                 {/* icon  */}
                                 <div className='w-[120px] shadow-2xl rounded-3xl  h-[50px] pt-0 px-3 absolute bottom-[60px] left-[118px] bg-[var(--white)] flex items-center justify-center'>
                                     <ul className='flex gap-3  '>
-                                        <li><BiLogoFacebook /></li>
-                                        <li><AiFillInstagram /></li>
-                                        <li><AiOutlineTwitter /></li>
+                                     <FontAwesomeIcon icon={faFacebook } style={{fontSize:"20px"}} />
+                                     <FontAwesomeIcon icon={faTwitter } style={{fontSize:"20px"}} />
+                                     <FontAwesomeIcon icon={faInstagram } style={{fontSize:"20px"}} />
                                     </ul>
                                 </div>
                                 

@@ -1,6 +1,10 @@
 import Link from 'next/link';
-import { AiFillInstagram, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/Ai';
-import { BiLogoFacebook } from 'react-icons/Bi';
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import {
+    faFacebook, faInstagram, faTwitter
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Footer = () => {
@@ -10,12 +14,17 @@ const Footer = () => {
                 <h1 className=" font-[700] text-[40px] mb-4 ">WEB LOGO</h1>
                 <p className='font-medium text-[20px]'>Some footer text about the  Agency. Just a little description to help people understand you better</p>
                 {/* social link  */}
-                <ul className='flex gap-[20px] mt-[20px]'>
+                {/* <ul className='flex gap-[20px] mt-[20px]'>
                     <li className='flex justify-center w-[40px] h-[40px] bg-[var(--primary-text-color)] items-center rounded-full text-[25px] ' ><BiLogoFacebook /></li>
                     <li className='flex justify-center w-[40px] h-[40px] bg-[var(--primary-text-color)] items-center rounded-full text-[25px] ' ><AiOutlineTwitter /></li>
                     <li className='flex justify-center w-[40px] h-[40px] bg-[var(--primary-text-color)] items-center rounded-full text-[25px] ' ><AiFillLinkedin /></li>
                     <li className='flex justify-center w-[40px] h-[40px] bg-[var(--primary-text-color)] items-center rounded-full text-[25px] ' ><AiFillInstagram /></li>
-                </ul>
+                </ul> */}
+                <ul className='flex gap-3  '>
+                                     <FontAwesomeIcon icon={faFacebook } style={{fontSize:"20px"}} />
+                                     <FontAwesomeIcon icon={faTwitter } style={{fontSize:"20px"}} />
+                                     <FontAwesomeIcon icon={faInstagram } style={{fontSize:"20px"}} />
+                                    </ul>
 
             </div>
             <div>
