@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #000000;
+  --white: #fff;
+  --bg-button: #20b15a;
+  --secondary-bg: #f0fdf4;
+  --bg-hero: #d7f5dc;
+  --primary-text-color: #20b15a;
+  --secondary-text-color: #8b8b8b;
+  --header-bg: #f8f9fc;
+}
+
+@layer components {
+  .btn {
+    @apply border border-[var(--bg-button)] py-2 px-3 rounded-lg hover:bg-[var(--bg-button)] hover:text-[var(--white)];
+  }
+}
