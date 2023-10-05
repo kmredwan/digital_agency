@@ -27,19 +27,19 @@ const Hero = async () => {
             </div>
             <div className="grid grid-cols-6 gap-3 ">
                 <div className="col-span-4">
-                    <img className="w-full" src={data.image1} alt="" />
+                    <img className="w-full h-[300px] object-cover" src={data.image1} alt="" />
                 </div>
 
                 <div className="col-span-2 " >
-                    <img className="w-full" src={data.image2} alt="" />
+                    <img className="w-[300px] h-[300px] object-cover " src={data.image2} alt="" />
                 </div>
 
                 <div className="col-span-2">
-                    <img className="w-full" src={data.image3} alt="" />
+                    <img className="w-[300px] h-[200px]" src={data.image3} alt="" />
                 </div>
 
                 <div className="col-span-4">
-                <img className="w-full" src={data.image4} alt="" /> 
+                <img className="w-[500px] h-[200px] object-cover" src={data.image4} alt="" /> 
                 </div>
             </div>
             </div>
